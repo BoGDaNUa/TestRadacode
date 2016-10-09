@@ -3,9 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TestRadacode"
              x:Class="TestRadacode.MainPage">
-
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
-
+  <ContentPage.Content> 
+<StackLayout   x:Name="layout">
+  <Label Text="Вітаємо у додатку тест-завдання від Radacode" HorizontalOptions="Center" />
+  <Entry x:Name="NameUser" Placeholder="Введіть імя" ></Entry>
+  <Entry x:Name="FamallyUser" Placeholder="Введіть призвіще"  IsVisible="False"></Entry>
+  <Label x:Name="LabelCountry" IsVisible="False" Text="Віберить країну"></Label>
+  <Picker  x:Name="PickerCountry" IsVisible="False" ></Picker>
+  <Entry x:Name="PickerCity" Placeholder="Введіть назву міста" IsVisible="False"></Entry >
+  <ListView x:Name="ListFindCity" IsVisible="False"></ListView>
+  <Entry  x:Name="PickerUniversity" Placeholder="Введіть назву університету" IsVisible="False"></Entry>
+  <ListView x:Name="ListUniversity" IsVisible="False"></ListView>
+<Button x:Name="EndCreate" IsVisible="False" Text="Створити бланк"></Button>
+</StackLayout  >
+    </ContentPage.Content> 
 </ContentPage>
